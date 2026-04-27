@@ -27,9 +27,5 @@ Foi construído utilizando uma variedade de tecnologias e ferramentas modernas, 
 - **Otimizado para SEO**: Uso de meta tags para melhor indexação em mecanismos de busca.
 - **Alto Desempenho**: O código foi otimizado para carregamento rápido e desempenho eficiente.
 
-<<<<<<< HEAD
-- **LinkedIn**: [Ivan Junior](https://www.linkedin.com/in/ivan-junior-544a07a6/)
-=======
 
 - **LinkedIn**: [Ivan Junior](https://www.linkedin.com/in/ivan-junior-544a07a6/)
->>>>>>> bd3f9d7 (fix: move files to root)
