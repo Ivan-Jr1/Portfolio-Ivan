@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico.png">
+
+    <title>Ivan Junior │ Desenvolvedor</title>
+    <meta name="description"
+        content="">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsividade.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--AOS CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-80XVHS2NWN">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-80XVHS2NWN');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '756368293168994');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=756368293168994&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+    
+    <div class="loader"></div>
+
+    <!--Start HEADER-->
+    <header id="header" class="header">
+        <div class="container-header">
+            <div class="logo">
+                <a href="index.html">Ivan Junior <span class="destaque">│Developer.</span></a>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="menu-navegacao">
+                <i class="fa-solid fa-times close-icon"></i>
+                <ul class="lista-navegacao">
+                    <li><a href="index.html" class="fade-left">INÍCIO</a></li>
+                    <li><a href="about.html" class="fade-up">SOBRE</a></li>
+                    <li><a href="services.html" class="fade-right">SERVIÇOS</a></li>
+                    <li><a href="projects.html" class="fade-down">PROJETOS</a></li>
+            </div>
+        </div>
+    </header>
+    <!--End HEADER-->
+
+    <!--Start Section Services-->
+    <section id="services" class="services">
+        <div class="container-services">
+
+            <div class="headline" data-aos="fade-up" data-aos-delay="100">
+                <span class="destaque">WORKS</span>
+                <h1>Confira algumas das áreas em que já atuei</h1>
+            </div>
+
+            <!--start services content-->
+            <div class="content-services">
+                <div class="card-service" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="fa fa-laptop-code"></i>
+                    <h2>Hospital de Amor | Técnico de Suporte I</h2>
+                    <p>Atualmente Técnico de Suporte com responsabilidade pela manutenção e funcionamento das Unidades Básicas de Saúde (UBS).</p>
+                </div>
+
+                <div class="card-service" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Hospital de Amor | Auxiliar Administrativo</h2>
+                    <p>Em 2023 entrei na instituição na função de auxiliar administrativo Hospital de Amor, trabalhando com a plataforma RedCap. Gerenciando com eficiência os dados coletados.</p>
+                </div>
+
+                <div class="card-service" data-aos="zoom-in" data-aos-delay="250">
+                    <i class="fa fa-tools"></i>
+                    <h2>Minerva Fine Foods | Jovem Aprendiz - TI</h2>
+                    <p>Em 2019 iniciei minha jornada como jovem aprendiz no setor de tecnologia da informação, onde adquiri conhecimentos sólidos em informática e suporte técnico.</p>
+                </div>
+
+                <div class="card-service" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Tallest Brasil | Estagiário - Designer gráfico</h2>
+                    <p>Atuei como estagiário em uma empresa de Design, onde pude explorar minha criatividade. Trabalhei em projetos de design gráfico, desenvolvimento de identidade visual.</p>
+                </div>        
+            </div>
+            <!--end services content-->
+        </div>
+
+        <!--Scroll animation-->
+        <div class="chevron-down">
+            <img src="assets/image/scroll-icon.png" alt="image">
+        </div>
+
+    </section>
+    <!--End Section Services-->
+
+    <!--Start Section Testimonial-->
+    <section id="testimonial" class="testimonial" data-aos="fade-up">
+        <div class="container-testimonial">
+            <div class="headline" data-aos="fade-up" data-aos-delay="100">
+                <span class="destaque">Certificados & Cursos</span>
+                <h1>Minha Jornada de Estudos</h1>
+            </div>
+
+            <div class="content-testmonial">
+                <!--Headline Skills-->
+                <div class="testimonial-headline" data-aos="fade-right" data-aos-delay="150">
+                    <h1>"Quem precisa de sorte quando se tem Ctrl + Z?"</h1>
+                    <p>Cada curso concluído representa um passo na minha jornada como futuro desenvolvedor. Por meio de formações e estudos contínuos, venho adquirindo habilidades sólidas em desenvolvimento web, design e tecnologia. Essa dedicação constante aos estudos é o alicerce das soluções que pretendo entregar com qualidade, propósito e evolução contínua.</p>
+
+                </div>
+
+                <div class="testimonial-info" data-aos="fade-left" data-aos-delay="175">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" data-aos="fade-up" data-aos-delay="200">
+                            <img src="assets/image/Cert 1.png" alt="user">
+                            <p>ALURA | JavaScript: explorando a linguagem.</p>
+                        </div>
+
+                        <div class="item" data-aos="fade-up" data-aos-delay="225">
+                            <img src="assets/image/Cert 2.png" alt="user">
+                            <p>ALURA | JavaScript: programando a Orientação..</p>
+                        </div>
+
+                        <div class="item" data-aos="fade-up" data-aos-delay="250">
+                            <img src="assets/image/Cert 3.png" alt="user">
+                            <p>ALURA | JavaScript: programando na linguagem..</p>
+                        </div>
+
+                        <div class="item" data-aos="fade-up" data-aos-delay="275">
+                            <img src="assets/image/Cert 4.png" alt="user">
+                            <p>ALURA | Lógica de programação: mergulhe em programação..</p>
+                        </div>
+                        
+                        <div class="item" data-aos="fade-up" data-aos-delay="300">
+                            <img src="assets/image/Cert 5.png" alt="user">
+                            <p>I REDCap Seminar Day</p>
+                        </div>
+                         <div class="item" data-aos="fade-up" data-aos-delay="300">
+                            <img src="assets/image/Cert 6.png" alt="user">
+                            <p>ALURA | SQLite online: conhecendo instruções SQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Section Testimonial-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <p>Desenvolvido por <span class="destaque">Ivan Junior│Dev.</span></p>
+    </footer>
+    <!--End Footer-->
+
+
+    <!--OwlCarousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 32,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1025: { items: 2 },
+                    1500: { items: 3 }
+                }
+            });
+        });
+    </script>
+    
+    <!--Scripts-->
+    <script src="assets/js/imageScroll.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/headerAnimation.js"></script>
+    <script src="assets/js/textAnimation.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/changePagesAnimation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
