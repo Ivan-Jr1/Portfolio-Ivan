@@ -369,7 +369,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -513,7 +513,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
 }
 
@@ -818,7 +818,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
 }
 
