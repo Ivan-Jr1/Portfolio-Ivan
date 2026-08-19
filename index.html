@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Aplica o tema salvo antes da 1ª renderização, evitando flash e cor errada nas partículas -->
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico.png">
 
@@ -73,12 +80,6 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=756368293168994&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
-
-    <style>
-        body {
-            overflow: hidden;
-        }
-    </style>
 </head>
 
 <body>
@@ -92,19 +93,39 @@
     <header id="header" class="header">
         <div class="container-header">
             <div class="logo">
-                <a href="index.html">Ivan Junior <span class="destaque">│Developer.</span></a>
+                <span class="status-dot"></span>
+                <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
             </div>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+            <nav class="nav-desktop">
+                <ul class="lista-navegacao-desktop">
+                    <li><a href="index.html" class="active">~/home</a></li>
+                    <li><a href="about.html">~/about</a></li>
+                    <li><a href="services.html">~/services</a></li>
+                    <li><a href="projects.html">~/projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             <div class="menu-backdrop"></div>
             <div id="menu" class="menu-navegacao">
-                <i class="fa-solid fa-times close-icon"></i>
+                <div class="menu-header">
+                    <div class="logo">
+                        <span class="status-dot"></span>
+                        <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
+                    </div>
+                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu"></i>
+                </div>
                 <ul class="lista-navegacao">
-                    <li><a href="index.html">INÍCIO</a></li>
-                    <li><a href="about.html">SOBRE</a></li>
-                    <li><a href="services.html">SERVIÇOS</a></li>
-                    <li><a href="projects.html">PROJETOS</a></li>
+                    <li><a href="index.html" class="active"><span class="nav-index">01</span><span class="nav-path">~/home</span></a></li>
+                    <li><a href="about.html"><span class="nav-index">02</span><span class="nav-path">~/about</span></a></li>
+                    <li><a href="services.html"><span class="nav-index">03</span><span class="nav-path">~/services</span></a></li>
+                    <li><a href="projects.html"><span class="nav-index">04</span><span class="nav-path">~/projects</span></a></li>
                 </ul>
             </div>
         </div>
@@ -130,6 +151,7 @@
     </footer>
 
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/themeToggle.js"></script>
     <script src="assets/js/headerAnimation.js"></script>
     <script src="assets/js/textAnimation.js"></script>
     <script src="assets/js/particles.js"></script>

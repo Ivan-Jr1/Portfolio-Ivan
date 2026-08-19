@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Aplica o tema salvo antes da 1ª renderização, evitando flash de tema errado -->
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico.png">
 
-    <title>Ivan Junior │ Desenvolvedor</title>
+    <title>Trajetória │ Ivan Junior</title>
     <meta name="description"
         content="Conheça a trajetória profissional de Ivan Junior: experiência em suporte técnico, TI e design gráfico, unindo tecnologia e criatividade.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ivan-jr1.github.io/Portfolio-Ivan/services.html">
-    <meta property="og:title" content="Ivan Junior │ Desenvolvedor">
+    <meta property="og:title" content="Trajetória │ Ivan Junior">
     <meta property="og:description"
         content="Conheça a trajetória profissional de Ivan Junior: experiência em suporte técnico, TI e design gráfico, unindo tecnologia e criatividade.">
     <meta property="og:image" content="https://ivan-jr1.github.io/Portfolio-Ivan/assets/image/eu.jpeg">
@@ -25,7 +32,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ivan Junior │ Desenvolvedor">
+    <meta name="twitter:title" content="Trajetória │ Ivan Junior">
     <meta name="twitter:description"
         content="Conheça a trajetória profissional de Ivan Junior: experiência em suporte técnico, TI e design gráfico, unindo tecnologia e criatividade.">
     <meta name="twitter:image" content="https://ivan-jr1.github.io/Portfolio-Ivan/assets/image/eu.jpeg">
@@ -34,6 +41,7 @@
     <link rel="stylesheet" href="assets/css/responsividade.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -85,25 +93,46 @@
     <header id="header" class="header">
         <div class="container-header">
             <div class="logo">
-                <a href="index.html">Ivan Junior <span class="destaque">│Developer.</span></a>
+                <span class="status-dot"></span>
+                <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
             </div>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+            <nav class="nav-desktop">
+                <ul class="lista-navegacao-desktop">
+                    <li><a href="index.html">~/home</a></li>
+                    <li><a href="about.html">~/about</a></li>
+                    <li><a href="services.html" class="active">~/services</a></li>
+                    <li><a href="projects.html">~/projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             <div class="menu-backdrop"></div>
             <div id="menu" class="menu-navegacao">
-                <i class="fa-solid fa-times close-icon"></i>
+                <div class="menu-header">
+                    <div class="logo">
+                        <span class="status-dot"></span>
+                        <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
+                    </div>
+                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu"></i>
+                </div>
                 <ul class="lista-navegacao">
-                    <li><a href="index.html" class="fade-left">INÍCIO</a></li>
-                    <li><a href="about.html" class="fade-up">SOBRE</a></li>
-                    <li><a href="services.html" class="fade-right">SERVIÇOS</a></li>
-                    <li><a href="projects.html" class="fade-down">PROJETOS</a></li>
+                    <li><a href="index.html" class="fade-left"><span class="nav-index">01</span><span class="nav-path">~/home</span></a></li>
+                    <li><a href="about.html" class="fade-up"><span class="nav-index">02</span><span class="nav-path">~/about</span></a></li>
+                    <li><a href="services.html" class="fade-right active"><span class="nav-index">03</span><span class="nav-path">~/services</span></a></li>
+                    <li><a href="projects.html" class="fade-down"><span class="nav-index">04</span><span class="nav-path">~/projects</span></a></li>
                 </ul>
             </div>
         </div>
     </header>
     <!--End HEADER-->
 
+    <main>
     <!--Start Section Services-->
     <section id="services" class="services">
         <div class="container-services">
@@ -168,7 +197,7 @@
 
         <!--Scroll animation-->
         <div class="chevron-down">
-            <img src="assets/image/scroll-icon.png" alt="image">
+            <img src="assets/image/scroll-icon.png" alt="" aria-hidden="true">
         </div>
 
     </section>
@@ -193,31 +222,31 @@
                 <div class="testimonial-info" data-aos="fade-left" data-aos-delay="175">
                     <div class="owl-carousel owl-theme">
                         <div class="item" data-aos="fade-up" data-aos-delay="200">
-                            <img src="assets/image/Cert 1.png" alt="Certificado ALURA - JavaScript: explorando a linguagem">
+                            <img src="assets/image/Cert 1.webp" alt="Certificado ALURA - JavaScript: explorando a linguagem" loading="lazy">
                             <p>ALURA | JavaScript: explorando a linguagem.</p>
                         </div>
 
                         <div class="item" data-aos="fade-up" data-aos-delay="225">
-                            <img src="assets/image/Cert 2.png" alt="Certificado ALURA - JavaScript: programando a Orientação a Objetos">
+                            <img src="assets/image/Cert 2.webp" alt="Certificado ALURA - JavaScript: programando a Orientação a Objetos" loading="lazy">
                             <p>ALURA | JavaScript: programando a Orientação..</p>
                         </div>
 
                         <div class="item" data-aos="fade-up" data-aos-delay="250">
-                            <img src="assets/image/Cert 3.png" alt="Certificado ALURA - JavaScript: programando na linguagem">
+                            <img src="assets/image/Cert 3.webp" alt="Certificado ALURA - JavaScript: programando na linguagem" loading="lazy">
                             <p>ALURA | JavaScript: programando na linguagem..</p>
                         </div>
 
                         <div class="item" data-aos="fade-up" data-aos-delay="275">
-                            <img src="assets/image/Cert 4.png" alt="Certificado ALURA - Lógica de programação: mergulhe em programação">
+                            <img src="assets/image/Cert 4.webp" alt="Certificado ALURA - Lógica de programação: mergulhe em programação" loading="lazy">
                             <p>ALURA | Lógica de programação: mergulhe em programação..</p>
                         </div>
                         
                         <div class="item" data-aos="fade-up" data-aos-delay="300">
-                            <img src="assets/image/Cert 5.png" alt="Certificado I REDCap Seminar Day">
+                            <img src="assets/image/Cert 5.webp" alt="Certificado I REDCap Seminar Day" loading="lazy">
                             <p>I REDCap Seminar Day</p>
                         </div>
                          <div class="item" data-aos="fade-up" data-aos-delay="300">
-                            <img src="assets/image/Cert 6.png" alt="Certificado ALURA - SQLite online: conhecendo instruções SQL">
+                            <img src="assets/image/Cert 6.webp" alt="Certificado ALURA - SQLite online: conhecendo instruções SQL" loading="lazy">
                             <p>ALURA | SQLite online: conhecendo instruções SQL</p>
                         </div>
                     </div>
@@ -226,6 +255,7 @@
         </div>
     </section>
     <!--End Section Testimonial-->
+    </main>
 
     <!--Footer-->
     <footer class="footer">
@@ -261,6 +291,7 @@
     <!--Scripts-->
     <script src="assets/js/imageScroll.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/themeToggle.js"></script>
     <script src="assets/js/headerAnimation.js"></script>
     <script src="assets/js/changePagesAnimation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

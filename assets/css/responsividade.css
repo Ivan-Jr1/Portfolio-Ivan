@@ -16,8 +16,8 @@
     }
 
     /*Menu Navegação*/
-    .lista-navegacao li {
-        font-size: 1.8rem;
+    .lista-navegacao li a {
+        font-size: 1.3rem;
     }
 
     /*Home*/
@@ -148,13 +148,21 @@
         font-size: 1.6rem;
     }
 
-    .menu-icon, .close-icon {
+    .nav-desktop {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .close-icon {
         font-size: 2rem;
     }
 
     /*Menu Navegação*/
-    .lista-navegacao li {
-        font-size: 1.8rem;
+    .lista-navegacao li a {
+        font-size: 1.3rem;
     }
 
     /*Home*/

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
-    const navLinks = document.querySelectorAll('.lista-navegacao a');
+    const navLinks = document.querySelectorAll('.lista-navegacao a, .lista-navegacao-desktop a');
     const loader = document.querySelector('.loader');
 
     function fadeOut(currentUrl) {
