@@ -16,7 +16,24 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => menu.classList.remove('open'), 300);
     }
 
+    function activateOnEnterOrSpace(handler) {
+        return function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                handler();
+            }
+        };
+    }
+
     menuIcon.addEventListener('click', openMenu);
+    menuIcon.addEventListener('keydown', activateOnEnterOrSpace(openMenu));
     closeIcon.addEventListener('click', closeMenu);
+    closeIcon.addEventListener('keydown', activateOnEnterOrSpace(closeMenu));
     backdrop.addEventListener('click', closeMenu);
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && menu.classList.contains('open')) {
+            closeMenu();
+        }
+    });
 });

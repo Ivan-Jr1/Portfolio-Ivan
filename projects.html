@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Aplica o tema salvo antes da 1ª renderização, evitando flash de tema errado -->
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico.png">
 
-    <title>Ivan Junior │ Desenvolvedor</title>
+    <title>Projetos │ Ivan Junior</title>
     <meta name="description"
         content="Confira os projetos de desenvolvimento web e software criados por Ivan Junior, utilizando HTML, CSS, JavaScript, React e Node.js.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ivan-jr1.github.io/Portfolio-Ivan/projects.html">
-    <meta property="og:title" content="Ivan Junior │ Desenvolvedor">
+    <meta property="og:title" content="Projetos │ Ivan Junior">
     <meta property="og:description"
         content="Confira os projetos de desenvolvimento web e software criados por Ivan Junior, utilizando HTML, CSS, JavaScript, React e Node.js.">
     <meta property="og:image" content="https://ivan-jr1.github.io/Portfolio-Ivan/assets/image/eu.jpeg">
@@ -25,7 +32,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ivan Junior │ Desenvolvedor">
+    <meta name="twitter:title" content="Projetos │ Ivan Junior">
     <meta name="twitter:description"
         content="Confira os projetos de desenvolvimento web e software criados por Ivan Junior, utilizando HTML, CSS, JavaScript, React e Node.js.">
     <meta name="twitter:image" content="https://ivan-jr1.github.io/Portfolio-Ivan/assets/image/eu.jpeg">
@@ -84,25 +91,46 @@
     <header id="header" class="header">
         <div class="container-header">
             <div class="logo">
-                <a href="index.html">Ivan Junior <span class="destaque">│Developer.</span></a>
+                <span class="status-dot"></span>
+                <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
             </div>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+            <nav class="nav-desktop">
+                <ul class="lista-navegacao-desktop">
+                    <li><a href="index.html">~/home</a></li>
+                    <li><a href="about.html">~/about</a></li>
+                    <li><a href="services.html">~/services</a></li>
+                    <li><a href="projects.html" class="active">~/projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             <div class="menu-backdrop"></div>
             <div id="menu" class="menu-navegacao">
-                <i class="fa-solid fa-times close-icon"></i>
+                <div class="menu-header">
+                    <div class="logo">
+                        <span class="status-dot"></span>
+                        <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
+                    </div>
+                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu"></i>
+                </div>
                 <ul class="lista-navegacao">
-                    <li><a href="index.html" class="fade-left">INÍCIO</a></li>
-                    <li><a href="about.html" class="fade-up">SOBRE</a></li>
-                    <li><a href="services.html" class="fade-right">SERVIÇOS</a></li>
-                    <li><a href="projects.html" class="fade-down">PROJETOS</a></li>
+                    <li><a href="index.html" class="fade-left"><span class="nav-index">01</span><span class="nav-path">~/home</span></a></li>
+                    <li><a href="about.html" class="fade-up"><span class="nav-index">02</span><span class="nav-path">~/about</span></a></li>
+                    <li><a href="services.html" class="fade-right"><span class="nav-index">03</span><span class="nav-path">~/services</span></a></li>
+                    <li><a href="projects.html" class="fade-down active"><span class="nav-index">04</span><span class="nav-path">~/projects</span></a></li>
                 </ul>
             </div>
         </div>
     </header>
     <!--End HEADER-->
 
+    <main>
     <!--Start Section Projects-->
     <section id="projects" class="projects">
         <div class="container-projects">
@@ -118,7 +146,7 @@
                     <!--Card Projeto 1-->
                     <div class="card-project" data-aos="zoom-in" data-aos-delay="150">
                         <div class="img-project">
-                            <img src="assets/image/note.png" alt="AlienByte">
+                            <img src="assets/image/note.webp" alt="AlienByte" loading="lazy">
                         </div>
 
                         <div class="content-card">
@@ -144,7 +172,7 @@
                     <!--Card Projeto 2-->
                     <div class="card-project" data-aos="zoom-in" data-aos-delay="200">
                         <div class="img-project">
-                            <img src="assets/image/Celular.png" alt="IzTask">
+                            <img src="assets/image/Celular.webp" alt="IzTask" loading="lazy">
                         </div>
 
                         <div class="content-card">
@@ -171,7 +199,7 @@
                     <!--Card Projeto 3-->
                     <div class="card-project" data-aos="zoom-in" data-aos-delay="250">
                         <div class="img-project">
-                            <img src="assets/image/Celular 2.png" alt="Idle Solar Tycoon: Energy">
+                            <img src="assets/image/Celular 2.webp" alt="Idle Solar Tycoon: Energy" loading="lazy">
                         </div>
 
                         <div class="content-card">
@@ -225,7 +253,7 @@
                     <!--Card Projeto 5-->
                     <div class="card-project" data-aos="zoom-in" data-aos-delay="150">
                         <div class="img-project">
-                            <img src="assets/image/noteByte.png" alt="ByteFix">
+                            <img src="assets/image/noteByte.webp" alt="ByteFix" loading="lazy">
                         </div>
 
                     <div class="content-card">
@@ -266,10 +294,11 @@
 
         <!--Scroll animation-->
         <div class="chevron-down">
-            <img src="assets/image/scroll-icon.png" alt="image">
+            <img src="assets/image/scroll-icon.png" alt="" aria-hidden="true">
         </div>
     </section>
     <!--End Section Projects-->
+    </main>
 
     <!--Footer-->
     <footer class="footer">
@@ -280,6 +309,7 @@
     <!--Scripts-->
     <script src="assets/js/imageScroll.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/themeToggle.js"></script>
     <script src="assets/js/headerAnimation.js"></script>
     <script src="assets/js/changePagesAnimation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

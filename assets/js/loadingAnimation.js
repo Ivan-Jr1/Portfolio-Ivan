@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const loadingScreen = document.getElementById('loading-screen');
     const loadingPercentage = document.getElementById('loading-percentage');
 
+    document.body.style.overflow = 'hidden';
+
     const loadingInterval = setInterval(() => {
         if (percentage >= 100) {
             clearInterval(loadingInterval);
-            loadingScreen.style.display = 'none';  
+            loadingScreen.style.display = 'none';
+            document.body.style.overflow = '';
         } else {
             percentage++;
             loadingPercentage.innerText = `${percentage}%`;
