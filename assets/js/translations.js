@@ -56,6 +56,7 @@ const translations = {
         tag_capstone: "Projeto Integrador",
         tag_corporate_game: "Desenvolvimento de Jogo Corporativo",
         tag_live: "Projeto no Ar",
+        tag_front: "Front-end do Projeto",
         badge_private: "Código privado",
         badge_corporate: "Projeto corporativo",
         btn_access: "Acessar",
@@ -64,8 +65,13 @@ const translations = {
         p3_desc: "Idle Solar Tycoon: Energy!, um simulador do tipo idle/clicker para plataformas móveis (iOS e Android), direcionado principalmente a crianças e adolescentes interessados em jogos de upgrades e evolução. O jogador assume o papel de um empreendedor que deve expandir sua usina solar e transformar-se no maior fornecedor de energia limpa do mundo, enfrentando desafios ambientais, econômicos e estratégicos.",
         p4_desc: "O PontoByte, é um sistema de ponto eletrônico com reconhecimento facial e painel web para gestão, foi desenvolvido em React Native com TypeScript e utiliza modelos de inteligência artificial para reconhecimento facial, integrados a backend em Node.js e banco de dados MySQL.",
         p5_desc: "ByteFix é uma marca de suporte e otimização de computadores, focada principalmente em notebooks, oferecendo soluções como formatação, backup, melhoria de desempenho e suporte técnico, com uma identidade tecnológica e profissional.",
-        p6_title: "Em breve",
-        p6_desc: "Novo projeto em desenvolvimento."
+        p6_desc: "SARP é um sistema de agendamento e solicitação de salas de reuniões, desenvolvido para otimizar o processo de gestão de recursos e agendamentos.",
+        p7_title: "Em breve",
+        p7_desc: "Novo projeto em desenvolvimento.",
+        p8_title: "Em breve",
+        p8_desc: "Novo projeto em desenvolvimento.",
+        p9_title: "Em breve",
+        p9_desc: "Novo projeto em desenvolvimento."
     },
     en: {
         aria_theme: "Toggle light/dark theme",
@@ -124,6 +130,7 @@ const translations = {
         tag_capstone: "Capstone Project",
         tag_corporate_game: "Corporate Game Development",
         tag_live: "Live Project",
+        tag_front: "Project Front-end",
         badge_private: "Private code",
         badge_corporate: "Corporate project",
         btn_access: "View",
@@ -132,7 +139,12 @@ const translations = {
         p3_desc: "Idle Solar Tycoon: Energy! is an idle/clicker simulator for mobile platforms (iOS and Android), aimed mainly at children and teens interested in upgrade and progression games. Players take on the role of an entrepreneur who must expand their solar plant and become the world's largest clean energy supplier, facing environmental, economic, and strategic challenges.",
         p4_desc: "PontoByte is an electronic time-tracking system with facial recognition and a web management panel, built with React Native and TypeScript. It uses AI models for facial recognition, integrated with a Node.js backend and a MySQL database.",
         p5_desc: "ByteFix is a computer support and optimization brand, focused mainly on laptops, offering solutions such as formatting, backup, performance improvement, and technical support, with a professional, tech-driven identity.",
-        p6_title: "Coming soon",
-        p6_desc: "New project in development."
+        p6_desc: "SARP is a meeting room booking and request system developed to improve resource management and the scheduling process.",
+        p7_title: "Coming soon",
+        p7_desc: "New project in development.",
+        p8_title: "Coming soon",
+        p8_desc: "New project in development.",
+        p9_title: "Coming soon",
+        p9_desc: "New project in development."
     }
 };

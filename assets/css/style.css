@@ -1137,6 +1137,12 @@ main {
     display: block;
 }
 
+.img-project img.img-logo-sarp {
+    width: 67%;
+    height: 67%;
+    margin: auto;
+}
+
 /* Placeholder para projetos sem screenshot */
 .img-project-placeholder {
     background: var(--surface);
