@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost/)",
+      "Bash(php -r ' *)",
+      "Bash(php *)",
+      "Bash(mysql --version)",
+      "Bash(curl -s -X POST http://localhost/controleiep/Models/nap/components/participantesdepesquisarecrutamento/editarAgendamento.php -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s -X POST http://localhost/controleiep/Models/nap/components/participantesdepesquisarecrutamento/buscaAgendamentosCalendar.php -d 'statusFiltro=pendentes&start=2026-08-01&end=2026-08-31')"
+    ]
+  }
+}

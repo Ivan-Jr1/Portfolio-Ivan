@@ -101,6 +101,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    width: 100%;
+}
+
 /* PARTICLES JS */
 #particles-js {
     position: absolute;
@@ -260,6 +264,13 @@ body {
 .theme-toggle:hover {
     border-color: var(--white);
     color: var(--white);
+}
+
+.lang-toggle {
+    font-family: "Roboto Mono", "Courier New", monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 .menu-icon {
@@ -650,7 +661,7 @@ body {
 }
 
 .skills-headline span {
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     font-weight: 300;
 }
 
@@ -670,32 +681,37 @@ body {
 }
 
 .list-about {
-    padding-top: 1.6rem;
+    padding-top: 0.8rem;
+}
+
+.list-about .destaque {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
 }
 
 .container-list {
-    display: flex;
-    gap: 1rem;
-}
-
-.container-list ul {
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.25rem 1rem;
+    padding-top: 0.5rem;
 }
 
 .container-list i {
     color: var(--blue);
-    font-size: 1.2rem;
+    font-size: 0.75rem;
 }
 
 .list-about li {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 300;
     color: var(--gray);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .skills-info {

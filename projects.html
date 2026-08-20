@@ -15,7 +15,7 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico.png">
 
-    <title>Projetos │ Ivan Junior</title>
+    <title data-i18n="title_projects">Projetos │ Ivan Junior</title>
     <meta name="description"
         content="Confira os projetos de desenvolvimento web e software criados por Ivan Junior, utilizando HTML, CSS, JavaScript, React e Node.js.">
 
@@ -103,10 +103,13 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro" data-i18n-aria="aria_theme">
                     <i class="fa-solid fa-sun"></i>
                 </button>
-                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu">
+                <button id="lang-toggle" class="theme-toggle lang-toggle" type="button" aria-label="Mudar idioma" data-i18n-aria="aria_lang">
+                    <span class="lang-label">EN</span>
+                </button>
+                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu" data-i18n-aria="aria_menu_open">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -117,7 +120,7 @@
                         <span class="status-dot"></span>
                         <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
                     </div>
-                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu"></i>
+                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu" data-i18n-aria="aria_menu_close"></i>
                 </div>
                 <ul class="lista-navegacao">
                     <li><a href="index.html" class="fade-left"><span class="nav-index">01</span><span class="nav-path">~/home</span></a></li>
@@ -136,8 +139,8 @@
         <div class="container-projects">
 
             <div class="headline" data-aos="fade-up" data-aos-delay="100">
-                <span class="destaque">Veja meus</span>
-                <h1>PROJETOS</h1>
+                <span class="destaque" data-i18n="projects_eyebrow">Veja meus</span>
+                <h1 data-i18n="projects_heading">PROJETOS</h1>
             </div>
 
             <div class="content-projects">
@@ -152,8 +155,8 @@
                         <div class="content-card">
                             <div class="text-project">
                                 <h2>AlienByte</h2>
-                                <span>Projeto Integrador</span>
-                                <p>Site de periféricos gamer desenvolvido utilizando HTML, CSS JavaScript. O site oferece uma interface atrativa e funcionalidades interativas, proporcionando aos usuários uma experiência envolvente ao explorar e adquirir produtos relacionados a jogos.</p>
+                                <span data-i18n="tag_capstone">Projeto Integrador</span>
+                                <p data-i18n="p1_desc">Site de periféricos gamer desenvolvido utilizando HTML, CSS JavaScript. O site oferece uma interface atrativa e funcionalidades interativas, proporcionando aos usuários uma experiência envolvente ao explorar e adquirir produtos relacionados a jogos.</p>
                             </div>
                             <div class="cta-project">
                                 <div class="tag-project">
@@ -162,7 +165,7 @@
                                     <i class="fab fa-js"></i>
                                 </div>
                                 <div class="btn-project">
-                                     <a href="https://ivan-jr1.github.io/AlienByte-2.0/" target="_blank">Acessar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                     <a href="https://ivan-jr1.github.io/AlienByte-2.0/" target="_blank"><span data-i18n="btn_access">Acessar</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -178,8 +181,8 @@
                         <div class="content-card">
                             <div class="text-project">
                                 <h2>IzTask</h2>
-                                <span>Projeto Integrador</span>
-                                <p>Plataforma de conexão com profissionais locais para serviços sob demanda tem se mostrado uma solução inovadora para facilitar a contratação de serviços. Essas plataformas criam um ambiente onde usuários podem encontrar rapidamente profissionais de diferentes áreas, como manutenção, reparos, consultoria e cuidados pessoais.</p>
+                                <span data-i18n="tag_capstone">Projeto Integrador</span>
+                                <p data-i18n="p2_desc">Plataforma de conexão com profissionais locais para serviços sob demanda tem se mostrado uma solução inovadora para facilitar a contratação de serviços. Essas plataformas criam um ambiente onde usuários podem encontrar rapidamente profissionais de diferentes áreas, como manutenção, reparos, consultoria e cuidados pessoais.</p>
                             </div>
                             <div class="cta-project">
                                 <div class="tag-project">
@@ -190,7 +193,7 @@
                                     <i class="fab fa-node"></i>
                                     <i class="fa-solid fa-database"></i>
                                 </div>
-                                <span class="badge-status">Código privado</span>
+                                <span class="badge-status" data-i18n="badge_private">Código privado</span>
                             </div>
                         </div>
                     </div>
@@ -205,8 +208,8 @@
                         <div class="content-card">
                             <div class="text-project">
                                 <h2>Idle Solar Tycoon: Energy</h2>
-                                <span>Desenvolvimento de Jogo Corporativo</span>
-                                <p>Idle Solar Tycoon: Energy!, um simulador do tipo idle/clicker para plataformas móveis (iOS e Android), direcionado principalmente a crianças e adolescentes interessados em jogos de upgrades e evolução. O jogador assume o papel de um empreendedor que deve expandir sua usina solar e transformar-se no maior fornecedor de energia limpa do mundo, enfrentando desafios ambientais, econômicos e estratégicos.</p>
+                                <span data-i18n="tag_corporate_game">Desenvolvimento de Jogo Corporativo</span>
+                                <p data-i18n="p3_desc">Idle Solar Tycoon: Energy!, um simulador do tipo idle/clicker para plataformas móveis (iOS e Android), direcionado principalmente a crianças e adolescentes interessados em jogos de upgrades e evolução. O jogador assume o papel de um empreendedor que deve expandir sua usina solar e transformar-se no maior fornecedor de energia limpa do mundo, enfrentando desafios ambientais, econômicos e estratégicos.</p>
                             </div>
                             <div class="cta-project">
                                 <div class="tag-project">
@@ -217,7 +220,7 @@
                                     <i class="fab fa-node"></i>
                                     <i class="fa-brands fa-figma"></i>
                                 </div>
-                                <span class="badge-status">Projeto corporativo</span>
+                                <span class="badge-status" data-i18n="badge_corporate">Projeto corporativo</span>
                             </div>
                         </div>
                     </div>
@@ -232,8 +235,8 @@
                         <div class="content-card">
                             <div class="text-project">
                                 <h2>PontoByte - Painel Administrativo</h2>
-                                <span>Projeto Integrador</span>
-                                <p>O PontoByte, é um sistema de ponto eletrônico com reconhecimento facial e painel web para gestão, foi desenvolvido em React Native com TypeScript e utiliza modelos de inteligência artificial para reconhecimento facial, integrados a
+                                <span data-i18n="tag_capstone">Projeto Integrador</span>
+                                <p data-i18n="p4_desc">O PontoByte, é um sistema de ponto eletrônico com reconhecimento facial e painel web para gestão, foi desenvolvido em React Native com TypeScript e utiliza modelos de inteligência artificial para reconhecimento facial, integrados a
                                  backend em Node.js e banco de dados MySQL.</p>
                             </div>
                             <div class="cta-project">
@@ -243,8 +246,8 @@
                                     <i class="fab fa-css3-alt"></i>
                                     <i class="fab fa-node"></i>
                                     <i class="fa-solid fa-database"></i>
-                                </div> 
-                                <span class="badge-status">Código privado</span>
+                                </div>
+                                <span class="badge-status" data-i18n="badge_private">Código privado</span>
                             </div>
                         </div>
                     </div>
@@ -259,9 +262,9 @@
                     <div class="content-card">
                             <div class="text-project">
                                 <h2>ByteFix</h2>
-                                <span>Projeto no Ar </span>
-                                <p>ByteFix é uma marca de suporte e otimização de computadores, focada principalmente em notebooks, 
-                                    oferecendo soluções como formatação, backup, melhoria de desempenho e 
+                                <span data-i18n="tag_live">Projeto no Ar </span>
+                                <p data-i18n="p5_desc">ByteFix é uma marca de suporte e otimização de computadores, focada principalmente em notebooks,
+                                    oferecendo soluções como formatação, backup, melhoria de desempenho e
                                     suporte técnico, com uma identidade tecnológica e profissional.</p>
                             </div>
                             <div class="cta-project">
@@ -270,7 +273,7 @@
                                     <i class="fab fa-css3-alt"></i>
                                 </div>
                                 <div class="btn-project">
-                                     <a href="https://bytefix-seven.vercel.app/" target="_blank">Acessar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                     <a href="https://bytefix-seven.vercel.app/" target="_blank"><span data-i18n="btn_access">Acessar</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -281,8 +284,8 @@
                     <div class="card-project card-project-soon" data-aos="zoom-in" data-aos-delay="400">
                         <div class="project-soon">
                             <i class="fa-solid fa-hourglass-half"></i>
-                            <h2>Em breve</h2>
-                            <p>Novo projeto em desenvolvimento.</p>
+                            <h2 data-i18n="p6_title">Em breve</h2>
+                            <p data-i18n="p6_desc">Novo projeto em desenvolvimento.</p>
                         </div>
                     </div>
                     <!--Card Projeto 6-->
@@ -302,7 +305,7 @@
 
     <!--Footer-->
     <footer class="footer">
-        <p>Desenvolvido por <span class="destaque">Ivan Junior│Dev.</span></p>
+        <p><span data-i18n="footer_made_by">Desenvolvido por</span> <span class="destaque">Ivan Junior│Dev.</span></p>
     </footer>
     <!--End Footer-->
 
@@ -310,6 +313,8 @@
     <script src="assets/js/imageScroll.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/themeToggle.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/languageToggle.js"></script>
     <script src="assets/js/headerAnimation.js"></script>
     <script src="assets/js/changePagesAnimation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

@@ -145,7 +145,7 @@
 
     /*Header*/
     .logo {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
     }
 
     .nav-desktop {
@@ -280,7 +280,7 @@
     }
 
     .skills-headline span {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .skills-headline h2 {
@@ -332,14 +332,15 @@
     }
 
     .testimonial-headline {
-        width: 50%;
+        flex: 1;
         display: flex;
         align-items: flex-start;
         justify-content: center;
     }
 
     .testimonial-info {
-        width: 50%;
+        flex: 1;
+        min-width: 0;
         padding: 0rem;
     }
 
