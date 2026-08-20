@@ -15,7 +15,7 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico.png">
 
-    <title>Ivan Junior │ Desenvolvedor</title>
+    <title data-i18n="title_home">Ivan Junior │ Desenvolvedor</title>
     <meta name="description"
         content="Portfólio de Ivan Junior, desenvolvedor em formação especializado em HTML, CSS, JavaScript e React, unindo tecnologia e criatividade.">
 
@@ -105,10 +105,13 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro" data-i18n-aria="aria_theme">
                     <i class="fa-solid fa-sun"></i>
                 </button>
-                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu">
+                <button id="lang-toggle" class="theme-toggle lang-toggle" type="button" aria-label="Mudar idioma" data-i18n-aria="aria_lang">
+                    <span class="lang-label">EN</span>
+                </button>
+                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu" data-i18n-aria="aria_menu_open">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -119,7 +122,7 @@
                         <span class="status-dot"></span>
                         <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
                     </div>
-                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu"></i>
+                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu" data-i18n-aria="aria_menu_close"></i>
                 </div>
                 <ul class="lista-navegacao">
                     <li><a href="index.html" class="active"><span class="nav-index">01</span><span class="nav-path">~/home</span></a></li>
@@ -136,7 +139,7 @@
         <div class="container-home">
             <div class="text-home">
                 <h1>Ivan Junior</h1>
-                <span>Desenvolvedor <span class="destaque texto-animado"></span></span>
+                <span><span data-i18n="home_role">Desenvolvedor</span> <span class="destaque texto-animado"></span></span>
             </div>
             <div class="redes-sociais">
                 <a href="https://github.com/NaviJunior" target="_blank"><i class="fab fa-github"></i></a>
@@ -147,11 +150,13 @@
     </main>
 
     <footer class="footer">
-        <p>Desenvolvido por <span class="destaque">Ivan Junior│Dev.</span></p>
+        <p><span data-i18n="footer_made_by">Desenvolvido por</span> <span class="destaque">Ivan Junior│Dev.</span></p>
     </footer>
 
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/themeToggle.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/languageToggle.js"></script>
     <script src="assets/js/headerAnimation.js"></script>
     <script src="assets/js/textAnimation.js"></script>
     <script src="assets/js/particles.js"></script>

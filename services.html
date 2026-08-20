@@ -15,7 +15,7 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico.png">
 
-    <title>Trajetória │ Ivan Junior</title>
+    <title data-i18n="title_services">Trajetória │ Ivan Junior</title>
     <meta name="description"
         content="Conheça a trajetória profissional de Ivan Junior: experiência em suporte técnico, TI e design gráfico, unindo tecnologia e criatividade.">
 
@@ -105,10 +105,13 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema claro/escuro" data-i18n-aria="aria_theme">
                     <i class="fa-solid fa-sun"></i>
                 </button>
-                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu">
+                <button id="lang-toggle" class="theme-toggle lang-toggle" type="button" aria-label="Mudar idioma" data-i18n-aria="aria_lang">
+                    <span class="lang-label">EN</span>
+                </button>
+                <div class="menu-icon" role="button" tabindex="0" aria-label="Abrir menu" data-i18n-aria="aria_menu_open">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -119,7 +122,7 @@
                         <span class="status-dot"></span>
                         <a href="index.html">ivan <span class="logo-ext">.dev</span></a>
                     </div>
-                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu"></i>
+                    <i class="fa-solid fa-times close-icon" role="button" tabindex="0" aria-label="Fechar menu" data-i18n-aria="aria_menu_close"></i>
                 </div>
                 <ul class="lista-navegacao">
                     <li><a href="index.html" class="fade-left"><span class="nav-index">01</span><span class="nav-path">~/home</span></a></li>
@@ -139,7 +142,7 @@
 
             <div class="headline" data-aos="fade-up" data-aos-delay="100">
                 <span class="destaque">WORKS</span>
-                <h1>Confira algumas das áreas em que já atuei</h1>
+                <h1 data-i18n="services_heading">Confira algumas das áreas em que já atuei</h1>
             </div>
 
             <!--start services content-->
@@ -148,10 +151,10 @@
                     <div class="timeline-item timeline-item-current" data-aos="fade-up" data-aos-delay="150">
                         <div class="timeline-marker"><i class="fa-solid fa-database"></i></div>
                         <div class="timeline-card">
-                            <span class="tag-atual">Atual</span>
+                            <span class="tag-atual" data-i18n="tag_current">Atual</span>
                             <span class="timeline-date">2026</span>
-                            <h2>Hospital de Amor | Administrador de Banco de Dados</h2>
-                            <p>Responsável pelo desenvolvimento e manutenção de soluções que garantem a integridade, o desempenho e a disponibilidade das informações da instituição.</p>
+                            <h2 data-i18n="tl1_title">Hospital de Amor | Administrador de Banco de Dados</h2>
+                            <p data-i18n="tl1_desc">Responsável pelo desenvolvimento e manutenção de soluções que garantem a integridade, o desempenho e a disponibilidade das informações da instituição.</p>
                         </div>
                     </div>
 
@@ -159,8 +162,8 @@
                         <div class="timeline-marker"><i class="fa-solid fa-laptop-code"></i></div>
                         <div class="timeline-card">
                             <span class="timeline-date">2024</span>
-                            <h2>Hospital de Amor | Técnico de Suporte I</h2>
-                            <p>Atuei como Técnico de Suporte, responsável pela manutenção e funcionamento das Unidades Básicas de Saúde (UBS).</p>
+                            <h2 data-i18n="tl2_title">Hospital de Amor | Técnico de Suporte I</h2>
+                            <p data-i18n="tl2_desc">Atuei como Técnico de Suporte, responsável pela manutenção e funcionamento das Unidades Básicas de Saúde (UBS).</p>
                         </div>
                     </div>
 
@@ -168,17 +171,17 @@
                         <div class="timeline-marker"><i class="fa-solid fa-layer-group"></i></div>
                         <div class="timeline-card">
                             <span class="timeline-date">2023</span>
-                            <h2>Hospital de Amor | Auxiliar Administrativo</h2>
-                            <p>Entrei na instituição na função de auxiliar administrativo, trabalhando com a plataforma RedCap. Gerenciando com eficiência os dados coletados.</p>
+                            <h2 data-i18n="tl3_title">Hospital de Amor | Auxiliar Administrativo</h2>
+                            <p data-i18n="tl3_desc">Entrei na instituição na função de auxiliar administrativo, trabalhando com a plataforma RedCap. Gerenciando com eficiência os dados coletados.</p>
                         </div>
                     </div>
 
                      <div class="timeline-item" data-aos="fade-up" data-aos-delay="350">
-                        <div class="timeline-marker"><i class="fa-solid fa-image"></i></div> 
+                        <div class="timeline-marker"><i class="fa-solid fa-image"></i></div>
                         <div class="timeline-card">
                             <span class="timeline-date">2020</span>
-                            <h2>Tallest Brasil | Estagiário - Designer gráfico</h2>
-                            <p>Atuei como estagiário em uma empresa de Design, onde pude explorar minha criatividade. Trabalhei em projetos de design gráfico, desenvolvimento de identidade visual.</p>
+                            <h2 data-i18n="tl4_title">Tallest Brasil | Estagiário - Designer gráfico</h2>
+                            <p data-i18n="tl4_desc">Atuei como estagiário em uma empresa de Design, onde pude explorar minha criatividade. Trabalhei em projetos de design gráfico, desenvolvimento de identidade visual.</p>
                         </div>
                     </div>
 
@@ -186,8 +189,8 @@
                         <div class="timeline-marker"><i class="fa fa-tools"></i></div>
                         <div class="timeline-card">
                             <span class="timeline-date">2019</span>
-                            <h2>Minerva Fine Foods | Jovem Aprendiz - TI</h2>
-                            <p>Iniciei minha jornada como jovem aprendiz no setor de tecnologia da informação, onde adquiri conhecimentos sólidos em informática e suporte técnico.</p>
+                            <h2 data-i18n="tl5_title">Minerva Fine Foods | Jovem Aprendiz - TI</h2>
+                            <p data-i18n="tl5_desc">Iniciei minha jornada como jovem aprendiz no setor de tecnologia da informação, onde adquiri conhecimentos sólidos em informática e suporte técnico.</p>
                         </div>
                     </div>
                 </div>
@@ -207,15 +210,15 @@
     <section id="testimonial" class="testimonial" data-aos="fade-up">
         <div class="container-testimonial">
             <div class="headline" data-aos="fade-up" data-aos-delay="100">
-                <span class="destaque">Certificados & Cursos</span>
-                <h2>Minha Jornada de Estudos</h2>
+                <span class="destaque" data-i18n="testimonial_eyebrow">Certificados & Cursos</span>
+                <h2 data-i18n="testimonial_heading">Minha Jornada de Estudos</h2>
             </div>
 
             <div class="content-testmonial">
                 <!--Headline Skills-->
                 <div class="testimonial-headline" data-aos="fade-right" data-aos-delay="150">
-                    <h3>"Quem precisa de sorte quando se tem Ctrl + Z?"</h3>
-                    <p>Cada curso concluído representa um passo na minha jornada como futuro desenvolvedor. Por meio de formações e estudos contínuos, venho adquirindo habilidades sólidas em desenvolvimento web, design e tecnologia. Essa dedicação constante aos estudos é o alicerce das soluções que pretendo entregar com qualidade, propósito e evolução contínua.</p>
+                    <h3 data-i18n="testimonial_quote">"Quem precisa de sorte quando se tem Ctrl + Z?"</h3>
+                    <p data-i18n="testimonial_desc">Cada curso concluído representa um passo na minha jornada como futuro desenvolvedor. Por meio de formações e estudos contínuos, venho adquirindo habilidades sólidas em desenvolvimento web, design e tecnologia. Essa dedicação constante aos estudos é o alicerce das soluções que pretendo entregar com qualidade, propósito e evolução contínua.</p>
 
                 </div>
 
@@ -223,31 +226,31 @@
                     <div class="owl-carousel owl-theme">
                         <div class="item" data-aos="fade-up" data-aos-delay="200">
                             <img src="assets/image/Cert 1.webp" alt="Certificado ALURA - JavaScript: explorando a linguagem" loading="lazy">
-                            <p>ALURA | JavaScript: explorando a linguagem.</p>
+                            <p data-i18n="cert1">ALURA | JavaScript: explorando a linguagem.</p>
                         </div>
 
                         <div class="item" data-aos="fade-up" data-aos-delay="225">
                             <img src="assets/image/Cert 2.webp" alt="Certificado ALURA - JavaScript: programando a Orientação a Objetos" loading="lazy">
-                            <p>ALURA | JavaScript: programando a Orientação..</p>
+                            <p data-i18n="cert2">ALURA | JavaScript: programando a Orientação..</p>
                         </div>
 
                         <div class="item" data-aos="fade-up" data-aos-delay="250">
                             <img src="assets/image/Cert 3.webp" alt="Certificado ALURA - JavaScript: programando na linguagem" loading="lazy">
-                            <p>ALURA | JavaScript: programando na linguagem..</p>
+                            <p data-i18n="cert3">ALURA | JavaScript: programando na linguagem..</p>
                         </div>
 
                         <div class="item" data-aos="fade-up" data-aos-delay="275">
                             <img src="assets/image/Cert 4.webp" alt="Certificado ALURA - Lógica de programação: mergulhe em programação" loading="lazy">
-                            <p>ALURA | Lógica de programação: mergulhe em programação..</p>
+                            <p data-i18n="cert4">ALURA | Lógica de programação: mergulhe em programação..</p>
                         </div>
-                        
+
                         <div class="item" data-aos="fade-up" data-aos-delay="300">
                             <img src="assets/image/Cert 5.webp" alt="Certificado I REDCap Seminar Day" loading="lazy">
-                            <p>I REDCap Seminar Day</p>
+                            <p data-i18n="cert5">I REDCap Seminar Day</p>
                         </div>
                          <div class="item" data-aos="fade-up" data-aos-delay="300">
                             <img src="assets/image/Cert 6.webp" alt="Certificado ALURA - SQLite online: conhecendo instruções SQL" loading="lazy">
-                            <p>ALURA | SQLite online: conhecendo instruções SQL</p>
+                            <p data-i18n="cert6">ALURA | SQLite online: conhecendo instruções SQL</p>
                         </div>
                     </div>
                 </div>
@@ -259,7 +262,7 @@
 
     <!--Footer-->
     <footer class="footer">
-        <p>Desenvolvido por <span class="destaque">Ivan Junior│Dev.</span></p>
+        <p><span data-i18n="footer_made_by">Desenvolvido por</span> <span class="destaque">Ivan Junior│Dev.</span></p>
     </footer>
     <!--End Footer-->
 
@@ -292,6 +295,8 @@
     <script src="assets/js/imageScroll.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/themeToggle.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/languageToggle.js"></script>
     <script src="assets/js/headerAnimation.js"></script>
     <script src="assets/js/changePagesAnimation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
