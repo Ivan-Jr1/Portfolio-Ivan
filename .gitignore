@@ -1,0 +1,7 @@
+# Ferramentas de desenvolvimento / configs locais
+.claude/
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
