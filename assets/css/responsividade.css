@@ -143,6 +143,60 @@
         align-items: center;
     }
 
+    /*Services timeline - alternating cards*/
+    .timeline {
+        max-width: 900px;
+    }
+
+    .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        display: grid;
+        grid-template-columns: 1fr 64px 1fr;
+        align-items: start;
+        gap: 0 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .timeline-marker {
+        grid-column: 2;
+        justify-self: center;
+    }
+
+    .timeline-item .timeline-card {
+        grid-column: 1;
+        grid-row: 1;
+        border-left: none;
+        border-right: 3px solid var(--surface-border);
+        border-radius: 14px 4px 4px 14px;
+    }
+
+    .timeline-item:hover .timeline-card {
+        border-right-color: var(--blue);
+    }
+
+    .timeline-item-current .timeline-card {
+        border-right-color: var(--white);
+    }
+
+    .timeline-item:nth-child(even) .timeline-card {
+        grid-column: 3;
+        border-left: 3px solid var(--surface-border);
+        border-right: none;
+        border-radius: 4px 14px 14px 4px;
+    }
+
+    .timeline-item:nth-child(even):hover .timeline-card {
+        border-left-color: var(--blue);
+    }
+
+    .timeline-item:nth-child(even).timeline-item-current .timeline-card {
+        border-left-color: var(--white);
+    }
+
     /*Header*/
     .logo {
         font-size: 1.1rem;

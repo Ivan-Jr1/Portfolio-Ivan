@@ -888,8 +888,8 @@ main {
     position: relative;
     flex: 1;
     background-color: var(--surface);
-    border: 1px solid var(--surface-border);
-    border-radius: 20px;
+    border-left: 3px solid var(--surface-border);
+    border-radius: 4px 14px 14px 4px;
     padding: 1.5rem 1.75rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease, border-color 0.3s ease;
@@ -897,11 +897,19 @@ main {
 
 .timeline-item:hover .timeline-card {
     transform: translateX(6px);
-    border-color: var(--blue);
+    border-left-color: var(--blue);
 }
 
 .timeline-item-current .timeline-card {
-    border-color: var(--white);
+    border-left-color: var(--white);
+}
+
+.timeline-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.4rem;
 }
 
 .timeline-date {
@@ -911,13 +919,11 @@ main {
     letter-spacing: 0.04em;
     color: var(--gray);
     opacity: 0.7;
-    margin-bottom: 0.4rem;
 }
 
 .tag-atual {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    display: inline-flex;
+    align-items: center;
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -926,11 +932,11 @@ main {
     background-color: var(--white);
     padding: 4px 10px;
     border-radius: 20px;
+    white-space: nowrap;
 }
 
 .timeline-card h2 {
     font-size: 1.2rem;
-    padding-right: 4.5rem;
 }
 
 .timeline-card p {
@@ -938,6 +944,23 @@ main {
     font-weight: 400;
     font-size: 1rem;
     margin-top: 0.5rem;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.timeline-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--gray);
+    opacity: 0.75;
+    border: 1px solid var(--surface-border);
+    border-radius: 20px;
+    padding: 3px 12px;
 }
 
 
