@@ -1,5 +1,6 @@
 # Ivan Junior │ Portfólio Pessoal
 
+🔗 **Site no ar:** https://ivandev-portfolio.vercel.app
 
 Sou um profissional de tecnologia formado em Sistemas de Informação, com atuação como Técnico de Suporte no Hospital de Amor. No dia a dia, trabalho garantindo a estabilidade dos sistemas e a eficiência dos recursos de TI, sempre focado em resolver problemas reais e manter a operação funcionando onde ela mais importa.
 
